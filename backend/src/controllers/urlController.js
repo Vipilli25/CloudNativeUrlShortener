@@ -19,6 +19,7 @@ exports.shortenUrl = async (req, res) => {
             createdAt: Date.now(),
         },
     };
+    
 
     try {
         await dynamoDB.put(params).promise();
